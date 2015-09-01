@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/apk/res/android">
+    <!-- From: file:/Users/Akira1/StudioProjects/BleBeaconDetector/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array ns1:id="@+id/strarray_distance_selection" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="strarray_distance_selection">
+        <item ns1:id="@+id/str_distance_dot3m" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">0.3 m</item>
+        <item ns1:id="@+id/str_distance_dot5m" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">0.5 m</item>
+        <item ns1:id="@+id/str_distance_1m" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">1.0 m</item>
+        <item ns1:id="@+id/str_distance_1dot5m" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">1.5 m</item>
+        <item ns1:id="@+id/str_distance_2m" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">2.0 m</item>
+        <item ns1:id="@+id/str_distance_2dot5m" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">2.5 m</item>
+        <item ns1:id="@+id/str_distance_3m" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">3.0 m</item>
+        <item ns1:id="@+id/str_distance_4m" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">4.0 m</item>
+        <item ns1:id="@+id/str_distance_5m" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">5.0 m</item>
+    </string-array>
+    <string-array ns1:id="@+id/strarray_target_device_selection" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="strarray_target_device_selection">
+        <item ns1:id="@+id/item_device_estimote01" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">estimote (CD:7D:80:75:B1:34)</item>
+        <item ns1:id="@+id/item_device_estimote02" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">estimote (E4:24:DF:35:87:96)</item>
+        <item ns1:id="@+id/item_device_estimote03" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">estimote (D5:30:CE:B9:ED:A1)</item>
+        <item ns1:id="@+id/item_device_mybeacon_01" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">MyBeacon No.1 (00:1C:4D:42:DD:D8)</item>
+        <item ns1:id="@+id/item_device_mybeacon_02" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">MyBeacon No.2 (00:1C:4D:42:38:8E)</item>
+        <item ns1:id="@+id/item_device_mybeacon_03" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">MyBeacon No.3 (00:1C:4D:43:14:EE)</item>
+        <item ns1:id="@+id/item_device_mybeacon_04" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">MyBeacon No.4 (00:1C:4D:43:F3:EC)</item>
+        <item ns1:id="@+id/item_device_mybeacon_05" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">MyBeacon No.5 (00:1C:4D:42:D8:3F)</item>
+        <item ns1:id="@+id/item_device_mybeacon_06" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">MyBeacon No.6 (00:1C:4D:43:72:63)</item>
+        <item ns1:id="@+id/item_device_mybeacon_07" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">MyBeacon No.7 (00:1C:4D:43:30:A1)</item>
+        <item ns1:id="@+id/item_device_mybeacon_08" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">MyBeacon No.8 (00:1C:4D:42:2C:12)</item>
+        <item ns1:id="@+id/item_device_mybeacon_09" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">MyBeacon No.9 (00:1C:4D:43:E1:6C)</item>
+        <item ns1:id="@+id/item_device_mybeacon_10" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">MyBeacon No.10 (00:1C:4D:43:45:AC)</item>
+        </string-array>
+    <string name="app_name">BleBeaconDetector</string>
+    <string ns1:id="@+id/bt_start" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_bt_start">Start Detection</string>
+    <string ns1:id="@+id/str_bt_stop" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_bt_stop">Stop Detection</string>
+    <string ns1:id="@+id/str_cb_all" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_cb_all">All</string>
+    <string ns1:id="@+id/str_cb_target_only" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_cb_target_only">Target Only</string>
+    <string name="str_interval_edit_text_default">100</string>
+    <string name="str_text_configuration">SCANNING CONFIGURATION</string>
+    <string ns1:id="@+id/str_text_detect_count" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_detect_count">Detect Count :</string>
+    <string ns1:id="@+id/str_text_line" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_line">------------------------</string>
+    <string name="str_text_millis">ms</string>
+    <string ns1:id="@+id/str_text_no_result" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_no_result">No Result</string>
+    <string ns1:id="@+id/str_text_ready" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_ready">READY</string>
+    <string ns1:id="@+id/str_text_record_mode" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_record_mode">Record Mode :</string>
+    <string name="str_text_record_note">Recorde Note:</string>
+    <string ns1:id="@+id/str_text_scan_count" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_scan_count">Scan Count:</string>
+    <string ns1:id="@+id/str_text_scan_error" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_scan_error">SCAN ERROR</string>
+    <string ns1:id="@+id/str_text_scan_interval" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_scan_interval">Scan Interval :</string>
+    <string ns1:id="@+id/str_text_scan" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_scanning">SCANNING</string>
+    <string ns1:id="@+id/str_Text_statistics" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_statistics">SCANNING STATISTICS</string>
+    <string ns1:id="@+id/str_text_target_device" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_target_device">Target Device :</string>
+    <string ns1:id="@+id/str_text_wait_interval" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_wait_interval">Wait Interval:</string>
+    <string ns1:id="@+id/str_text_waiting" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="str_text_waiting">WAITING</string>
+    <!-- From: file:/Users/Akira1/StudioProjects/BleBeaconDetector/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="style_spinner_item_text" parent="@android:Widget.Holo.Light.TextView.SpinnerItem">
+		<item ns1:id="@+id/textColor" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="android:textColor">#000000</item>
+    </style>
+</resources>

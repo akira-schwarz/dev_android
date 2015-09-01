@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">BleBeaconDetector</string>
+    <string android:layout_width="wrap_content" android:id="@+id/bt_start" android:layout_height="wrap_content" name="str_bt_start">Start Detection</string>
+    <string android:layout_width="wrap_content" android:id="@+id/str_bt_stop" android:layout_height="wrap_content" name="str_bt_stop">Stop Detection</string>
+    <string android:layout_height="wrap_content" android:id="@+id/str_text_ready" android:layout_width="wrap_content" name="str_text_ready">READY</string>
+    <string android:layout_width="wrap_content" android:id="@+id/str_text_scan" android:layout_height="wrap_content" name="str_text_scanning">SCANNING</string>
+    <string android:layout_width="wrap_content" android:id="@+id/str_text_no_result" android:layout_height="wrap_content" name="str_text_no_result">No Result</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/str_text_scan_count" name="str_text_scan_count">Scan Count:</string>
+    <string android:id="@+id/str_text_detect_count" android:layout_height="wrap_content" android:layout_width="wrap_content" name="str_text_detect_count">Detect Count :</string>
+    <string android:id="@+id/str_text_line" android:layout_width="wrap_content" android:layout_height="wrap_content" name="str_text_line">------------------------</string>
+    <string android:id="@+id/str_cb_target_only" android:layout_width="wrap_content" android:layout_height="wrap_content" name="str_cb_target_only">Target Only</string>
+    <string-array android:id="@+id/strarray_distance_selection" android:layout_height="wrap_content" android:layout_width="wrap_content" name="strarray_distance_selection">
+        <item android:id="@+id/str_distance_dot3m" android:layout_height="wrap_content" android:layout_width="wrap_content">0.3 m</item>
+        <item android:id="@+id/str_distance_dot5m" android:layout_height="wrap_content" android:layout_width="wrap_content">0.5 m</item>
+        <item android:id="@+id/str_distance_1m" android:layout_height="wrap_content" android:layout_width="wrap_content">1.0 m</item>
+        <item android:id="@+id/str_distance_1dot5m" android:layout_height="wrap_content" android:layout_width="wrap_content">1.5 m</item>
+        <item android:id="@+id/str_distance_2m" android:layout_height="wrap_content" android:layout_width="wrap_content">2.0 m</item>
+        <item android:id="@+id/str_distance_2dot5m" android:layout_height="wrap_content" android:layout_width="wrap_content">2.5 m</item>
+        <item android:id="@+id/str_distance_3m" android:layout_height="wrap_content" android:layout_width="wrap_content">3.0 m</item>
+        <item android:id="@+id/str_distance_4m" android:layout_height="wrap_content" android:layout_width="wrap_content">4.0 m</item>
+        <item android:id="@+id/str_distance_5m" android:layout_height="wrap_content" android:layout_width="wrap_content">5.0 m</item>
+    </string-array>
+    <string name="str_text_configuration">SCANNING CONFIGURATION</string>
+    <string android:id="@+id/str_text_target_device" android:layout_height="wrap_content" android:layout_width="wrap_content" name="str_text_target_device">Target Device :</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/str_text_scan_interval" name="str_text_scan_interval">Scan Interval :</string>
+    <string android:layout_height="wrap_content" android:id="@+id/str_text_record_mode" android:layout_width="wrap_content" name="str_text_record_mode">Record Mode :</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/str_cb_all" name="str_cb_all">All</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/str_Text_statistics" name="str_text_statistics">SCANNING STATISTICS</string>
+    <string-array android:layout_width="wrap_content" android:id="@+id/strarray_target_device_selection" android:layout_height="wrap_content" name="strarray_target_device_selection">
+        <item android:id="@+id/item_device_estimote01" android:layout_width="wrap_content" android:layout_height="wrap_content">estimote (CD:7D:80:75:B1:34)</item>
+        <item android:id="@+id/item_device_estimote02" android:layout_width="wrap_content" android:layout_height="wrap_content">estimote (E4:24:DF:35:87:96)</item>
+        <item android:id="@+id/item_device_estimote03" android:layout_width="wrap_content" android:layout_height="wrap_content">estimote (D5:30:CE:B9:ED:A1)</item>
+        <item android:id="@+id/item_device_mybeacon_01" android:layout_width="wrap_content" android:layout_height="wrap_content">MyBeacon No.1 (00:1C:4D:42:DD:D8)</item>
+        <item android:id="@+id/item_device_mybeacon_02" android:layout_width="wrap_content" android:layout_height="wrap_content">MyBeacon No.2 (00:1C:4D:42:38:8E)</item>
+        <item android:id="@+id/item_device_mybeacon_03" android:layout_width="wrap_content" android:layout_height="wrap_content">MyBeacon No.3 (00:1C:4D:43:14:EE)</item>
+        <item android:id="@+id/item_device_mybeacon_04" android:layout_width="wrap_content" android:layout_height="wrap_content">MyBeacon No.4 (00:1C:4D:43:F3:EC)</item>
+        <item android:id="@+id/item_device_mybeacon_05" android:layout_width="wrap_content" android:layout_height="wrap_content">MyBeacon No.5 (00:1C:4D:42:D8:3F)</item>
+        <item android:id="@+id/item_device_mybeacon_06" android:layout_width="wrap_content" android:layout_height="wrap_content">MyBeacon No.6 (00:1C:4D:43:72:63)</item>
+        <item android:id="@+id/item_device_mybeacon_07" android:layout_width="wrap_content" android:layout_height="wrap_content">MyBeacon No.7 (00:1C:4D:43:30:A1)</item>
+        <item android:id="@+id/item_device_mybeacon_08" android:layout_width="wrap_content" android:layout_height="wrap_content">MyBeacon No.8 (00:1C:4D:42:2C:12)</item>
+        <item android:id="@+id/item_device_mybeacon_09" android:layout_width="wrap_content" android:layout_height="wrap_content">MyBeacon No.9 (00:1C:4D:43:E1:6C)</item>
+        <item android:id="@+id/item_device_mybeacon_10" android:layout_width="wrap_content" android:layout_height="wrap_content">MyBeacon No.10 (00:1C:4D:43:45:AC)</item>
+        </string-array>
+    <string name="str_text_millis">ms</string>
+    <string name="str_interval_edit_text_default">100</string>
+    <string android:layout_height="wrap_content" android:id="@+id/str_text_scan_error" android:layout_width="wrap_content" name="str_text_scan_error">SCAN ERROR</string>
+    <string android:layout_height="wrap_content" android:id="@+id/str_text_waiting" android:layout_width="wrap_content" name="str_text_waiting">WAITING</string>
+    <string android:id="@+id/str_text_wait_interval" android:layout_width="wrap_content" android:layout_height="wrap_content" name="str_text_wait_interval">Wait Interval:</string>
+    <string name="str_text_record_note">Recorde Note:</string>
+
+</resources>

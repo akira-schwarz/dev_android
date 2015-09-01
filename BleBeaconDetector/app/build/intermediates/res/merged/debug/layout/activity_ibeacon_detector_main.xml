@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/ConfigurationTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/str_text_configuration" />
+
+    <Button
+        android:id="@+id/bt_startstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/str_bt_start" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ConfigurationTextView" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TargetDeviceTextView"
+                android:layout_gravity="center_vertical"
+                android:text="@string/str_text_target_device" />
+
+            <Spinner
+                android:id="@+id/TargetDeviceSpinner"
+                style="android:attr/spinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/ScanIntervalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/str_text_scan_interval" />
+
+            <EditText
+                android:id="@+id/ScanIntervalEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:gravity="right|center_vertical"
+                android:inputType="numberSigned"
+                android:labelFor="@id/ScanIntervalEditText"
+                android:text="@string/str_interval_edit_text_default" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/MillisTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/str_text_millis" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/WaitIntervalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_text_wait_interval" />
+
+            <EditText
+                android:id="@+id/WaitIntervalEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:gravity="right|center_vertical"
+                android:inputType="numberSigned"
+                android:labelFor="@id/WaitIntervalEditText"
+                android:text="@string/str_interval_edit_text_default" />
+
+            <TextView
+                android:id="@+id/MillisTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_text_millis" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textViewRecordMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/str_text_record_mode" />
+
+            <CheckBox
+                android:id="@+id/cb_record_target_only"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_cb_target_only" />
+
+            <CheckBox
+                android:id="@+id/cb_record_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_cb_all" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/RecordNoteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_text_record_note" />
+
+            <EditText
+                android:id="@+id/RecordNoteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:ems="16"
+                android:inputType="text"
+                android:labelFor="@id/RecordNoteEditText" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/ScanStatisticsTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableLayout1"
+        android:background="@drawable/border"
+        android:text="@string/str_text_statistics" />
+
+    <TextView
+        android:id="@+id/ScanCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ScanStatisticsTextView"
+        android:text="@string/str_text_scan_count" />
+
+    <TextView
+        android:id="@+id/ResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ScanCountTextView"
+        android:text="@string/str_text_no_result" />
+
+    <TextView
+        android:id="@+id/StatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/str_text_ready" />
+
+</RelativeLayout><!-- From: file:/Users/Akira1/StudioProjects/BleBeaconDetector/app/src/main/res/layout/activity_ibeacon_detector_main.xml -->
